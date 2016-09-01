@@ -1,0 +1,63 @@
+html, body {
+	margin: 0px;
+}
+
+body {
+	/*padding-top: 5em;*/
+	padding-bottom: 5em;
+	color: #444;
+}
+
+label {
+	display: inline-block;
+	max-width: 100%;
+	margin-bottom: 0px;
+	font-weight: 500;
+}
+
+ul {
+	list-style-type: none;
+	-webkit-padding-start: 20px;
+}
+
+.chart-legend li {
+	padding: 0 1em 0 0;
+	display: inline-block;
+}
+
+input[type=checkbox] {
+	
+}
+
+.checkbox-custom {
+	opacity: 0;
+	position: absolute;
+}
+
+.checkbox-custom, .checkbox-custom-label {
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.checkbox-custom-label {
+	position: relative;
+}
+
+
+.label-before {
+	transition: box-shadow 0.3s;
+	content: '';
+	border: 2px solid #ddd;
+	display: inline-block;
+	vertical-align: middle;
+	width: 1.3em;
+	height: 1.3em;
+	margin-right: 0.5em;
+	text-align: center;
+	box-shadow: inset 0px 0px 0px 0.6em #fff;
+}
+
+.checkbox-custom:checked + label .label-before{
+	box-shadow: inset 0px 0px 0px 0.2em #fff;
+}

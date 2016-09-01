@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<object th:include="/fragments/shell :: head" th:remove="tag" />
+</head>
+<body>
+	<!-- <nav th:replace="fragments/shell :: nav"></nav>  -->
+
+	<div class="container">
+		<div class="row">
+			<div>
+				<div class="col-xs-12 col-md-2 col-xl-2 legend">
+					<div id="js-legend" class="chart-legend"></div>
+				</div>
+				<div class="chart col-xs-12 col-md-10 col-xl-10">
+					<canvas id="myChart" height="800"></canvas>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script th:inline="javascript">
+		/*<![CDATA[*/
+		var labels = /*[[${model.getTimeLabels()}]]*/[ 0 ];
+		var countries = /*[[${model.getCountryGDPs()}]]*/[ 0 ];
+		var chartLabel = /*[[${model.getChartLabel()}]]*/"Chart";
+		var yLabel = /*[[${model.getyLabel()}]]*/"Y-axis";
+		/*]]>*/
+	</script>
+	<object th:include="/fragments/shell :: scripts" th:remove="tag" />
+	<script th:src="@{/js/ChartScript.js}"></script>
+</body>
+</html>
