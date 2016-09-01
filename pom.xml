@@ -10,7 +10,7 @@
 		<version>1.3.5.RELEASE</version>
 	</parent>
 
-
+	<packaging>jar</packaging>
 
 	<dependencies>
 		<dependency>
@@ -76,7 +76,7 @@
 					<configuration>
 						<appName>eurostatgdp</appName>
 						<processTypes>
-							<web>java $JAVA_OPTS -jar target/*.jar</web>
+							<web>mvn spring-boot:run</web>
 						</processTypes>
 					</configuration>
 					<groupId>com.heroku.sdk</groupId>
