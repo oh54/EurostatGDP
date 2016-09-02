@@ -21,7 +21,7 @@ public class GDPController {
 	}
 	
 	// TODO Use map instead of string for api request parameters
-	@RequestMapping("/index")
+	@RequestMapping("*")
 	public String index(Model model) {
 		
 		RestTemplate restTemplate = new RestTemplate();
