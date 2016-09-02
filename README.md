@@ -1,5 +1,5 @@
 # EurostatGDP
-Automatically visualizing Eurostat data - https://eurostatgdp.herokuapp.com/
+Automatically visualizing Eurostat data - https://eurostatgdp.herokuapp.com/ (the load might be very slow due to using heroku free dynos)
 
 Currently, there is only one viewable chart - GDP per capita in PPS (Eurostat code: nama_10_pc)
 
